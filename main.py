@@ -60,6 +60,7 @@ print(len(reviews))
 
 df = pd.DataFrame({"Product name":product_name,"Prices":prices,"Description":description})
 #print(df)
+df = pd.DataFrame({"Product name":product_name,"Prices":prices,"Description":description,"Reviews":reviews}) #This line can be used when size of all the inputs are same
 
 df.to_csv("D:/WebScarping/flipkart_mobiles.csv")
 
@@ -67,4 +68,5 @@ df1 = pd.DataFrame({"Reviews":reviews})
 
 df1.to_csv("D:/WebScarping/flipkart_mobiles_reviews.csv")
 
-#merged_df=pd.merge(df,df1)
+
+
